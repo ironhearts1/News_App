@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="news_script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <title>News Search</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>SEARCH THE NEWS!!</h1>
+            <p>Disclaimer: Using author search field filters a much smaller selection likely resulting in no results, use carefully</p>
+        </div>
+        <div class="pagewrapper">
+            <div class="search-results-box">
+                <!-- <div class="search-result">
+                    <p class="title-return return">Insert title of article here</p>
+                    <p class="description-return return">Insert description of article here</p>
+                    <p class="author-return return">Insert Author Name here</p>
+                    <p class="source-return return">Insert source of the article here</p>
+                    <p class="date-return return">Insert date of the article here</p>
+                    <a href="" target="_blank" class="link-return return">View Article Here!</a>
+                </div> -->
+            </div>
+            <div class="search-field">
+                <form id="news-search-form" action="">
+                    <div class="keyword-input inputs">
+                        <label for="keyword" class="search-tag">Keyword: </label>
+                        <input type="text" id="keyword" />
+                    </div>
+                    <div class="author-search inputs">
+                        <label for="author" class="search-tag">Author: </label>
+                        <input type="text" id="author" />
+                    </div>
+                    <div class="date-range-search date-start inputs">
+                        <label for="date-range" class="search-tag-days">Start date (maximum and default is 1 months ago): </label><br />
+                        <input type="date" id="date-start" />
+                    </div>
+                    <div class="date-range-search inputs">
+                        <label for="date-range" class="search-tag-days">End date (default - today): </label><br />
+                        <input type="date" id="date-end" />
+                    </div>
+                    <div class="source-search inputs">
+                        <label for="source" class="search-tag"
+                            >Source domain - Add multiple by using a comma "," and no space <br />
+                            Ex: nytimes.com,techcrunch.com
+                        </label>
+                        <input type="text" id="source" />
+                    </div>
+                    <div class="submit-search">
+                        <input type="submit" id="search-btn" value="Search The News!!" />
+                        <button type="button" id="reset-btn">Reset results</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
